@@ -1,24 +1,13 @@
-/* =========================================================
-   SoundShed Explorer — style.css
-   Semana 2: hoja de estilos externa creada y enlazada.
-   El diseño visual completo (colores, tipografía, responsividad)
-   se trabaja en la Semana 4 (Nota 2). Por ahora solo se dejan
-   reglas base para no depender únicamente de Bootstrap.
-   ========================================================= */
-
 body {
     font-family: system-ui, sans-serif;
 }
 
-/* Cajas que representan pedales / bloques de efectos.
-   Maquetadas con borde y color, como se planificó en la ficha. */
 .pedal-box {
     border: 1px solid #999;
     border-radius: 4px;
     padding: 0.25rem 0.75rem;
 }
 
-/* Marca el enlace de la sección en la que el visitante está parado */
 .nav-link.active {
     font-weight: 600;
     text-decoration: underline;
