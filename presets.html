@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SoundShed Explorer — Inicio</title>
+    <title>SoundShed Explorer — Presets</title>
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,11 +33,11 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="presets.html">Presets</a>
+                            <a class="nav-link active" aria-current="page" href="presets.html">Presets</a>
                         </li>
 
                         <li class="nav-item">
@@ -50,117 +50,79 @@
         </nav>
     </header>
 
-
     <main>
         <section class="container text-center py-4">
-
-            <h1>
-                Guía visual de presets y cadenas
-                <br>
-                para guitarra digital
-            </h1>
-
-            <p class="mt-3">
-                SoundShed Explorer reúne cadenas de pedales y efectos ya armadas
-                para que cualquier guitarrista, sin importar su nivel, encuentre
-                el tono que busca sin perderse en foros ni tutoriales sueltos.
+            <h1>Explorar Presets</h1>
+            <p>
+                Cada tarjeta muestra el género al que pertenece el tono y el orden
+                de la cadena de efectos que lo compone: de la guitarra al amplificador.
             </p>
-
-            <a href="presets.html" class="btn btn-outline-dark mt-3">
-                Ver Catálogo
-            </a>
-
         </section>
 
-        <section class="container border-top border-bottom py-3">
-
+        <section class="container border-top py-4">
             <div class="row g-4">
+
                 <div class="col-12 col-md-4">
                     <article class="card h-100">
                         <div class="card-body text-center">
-
-                            <h2 class="h5">
-                                SHOEGAZE FUZZ
-                            </h2>
-
+                            <span class="badge text-bg-dark mb-2">Shoegaze</span>
+                            <h2 class="h5">SHOEGAZE FUZZ</h2>
                             <div class="d-flex flex-column gap-2 align-items-center my-3">
-
-                                <span class="pedal-box badge text-bg-light border">
-                                    OVERDRIVE
-                                </span>
-
-                                <span class="pedal-box badge text-bg-light border">
-                                    FUZZ → DELAY
-                                </span>
-
+                                <span class="pedal-box badge text-bg-light border">OVERDRIVE</span>
+                                <span class="pedal-box badge text-bg-light border">FUZZ</span>
+                                <span class="pedal-box badge text-bg-light border">DELAY</span>
                             </div>
-
-                            <a href="detalle-shoegaze.html" class="btn btn-outline-dark">Ver Detalle</a>
-
+                            <p class="small text-muted">
+                                Muro de sonido saturado con cola de delay larga, ideal para capas.
+                            </p>
+                             <a href="detalle-shoegaze.html" class="btn btn-outline-dark">Ver Detalle</a>
                         </div>
                     </article>
                 </div>
 
-
                 <div class="col-12 col-md-4">
                     <article class="card h-100">
                         <div class="card-body text-center">
-
-                            <h2 class="h5">
-                                J-ROCK CRUNCH
-                            </h2>
-
+                            <span class="badge text-bg-dark mb-2">J-Rock</span>
+                            <h2 class="h5">J-ROCK CRUNCH</h2>
                             <div class="d-flex flex-column gap-2 align-items-center my-3">
-
-                                <span class="pedal-box badge text-bg-light border">
-                                    COMPRESSOR
-                                </span>
-
-                                <span class="pedal-box badge text-bg-light border">
-                                    AMP → CAB
-                                </span>
-
+                                <span class="pedal-box badge text-bg-light border">COMPRESSOR</span>
+                                <span class="pedal-box badge text-bg-light border">AMP</span>
+                                <span class="pedal-box badge text-bg-light border">CAB</span>
                             </div>
-
+                            <p class="small text-muted">
+                                Distorsión de amplificador ajustada y compresión pareja para riffs marcados.
+                            </p>
                             <a href="detalle-jrock.html" class="btn btn-outline-dark">Ver Detalle</a>
-
                         </div>
                     </article>
                 </div>
 
-
                 <div class="col-12 col-md-4">
                     <article class="card h-100">
                         <div class="card-body text-center">
-
-                            <h2 class="h5">
-                                CLEAN AMBIENT
-                            </h2>
-
+                            <span class="badge text-bg-dark mb-2">Indie</span>
+                            <h2 class="h5">CLEAN AMBIENT</h2>
                             <div class="d-flex flex-column gap-2 align-items-center my-3">
-
-                                <span class="pedal-box badge text-bg-light border">
-                                    CHORUS
-                                </span>
-
-                                <span class="pedal-box badge text-bg-light border">
-                                    DELAY
-                                </span>
-
+                                <span class="pedal-box badge text-bg-light border">CHORUS</span>
+                                <span class="pedal-box badge text-bg-light border">DELAY</span>
                             </div>
+                            <p class="small text-muted">
+                                Tono limpio con modulación suave, útil para partes ambientales.
+                            </p>
                             <a href="detalle-clean.html" class="btn btn-outline-dark">Ver Detalle</a>
                         </div>
                     </article>
                 </div>
+
             </div>
         </section>
     </main>
-    <footer class="border-top text-center py-3">
 
+    <footer class="border-top text-center py-3">
         <div class="container">
             <strong>SoundShed Explorer</strong> — Proyecto de pasantía · Instituto Santo Tomás
         </div>
-
     </footer>
 
     <script
