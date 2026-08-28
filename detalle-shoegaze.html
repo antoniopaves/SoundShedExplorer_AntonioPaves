@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SoundShed Explorer — Detalle: Shoegaze Fuzz</title>
+    <title>SoundShed Explorer — Shoegaze Fuzz</title>
 
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -15,6 +18,7 @@
 
     <header>
         <nav class="navbar navbar-expand-lg border-bottom">
+
             <div class="container">
 
                 <a class="navbar-brand" href="index.html">
@@ -25,125 +29,204 @@
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                >
+                    data-bs-target="#navbarNav">
+
                     <span class="navbar-toggler-icon"></span>
+
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
+
                     <ul class="navbar-nav ms-auto">
+
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="index.html">
+                                Inicio
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="presets.html">Presets</a>
+                            <a class="nav-link active" href="presets.html">
+                                Presets
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html">
+                                Contacto
+                            </a>
                         </li>
+
                     </ul>
+
                 </div>
 
             </div>
+
         </nav>
     </header>
 
+
     <main>
-        <section class="container py-4">
-            <p><a href="presets.html">&larr; Volver al catálogo de presets</a></p>
 
-            <span class="badge text-bg-dark mb-2">Shoegaze</span>
-            <h1>Shoegaze Fuzz</h1>
-            <p>
-                Muro de sonido saturado con una cola de delay larga, pensado para
-                capas de guitarra que se funden con el resto de la mezcla.
-            </p>
-        </section>
+        <section class="container py-5">
 
-        <section class="container border-top py-4">
-            <h2 class="h5">Cadena de efectos</h2>
-            <div class="d-flex flex-wrap gap-2 align-items-center my-3">
-                <span class="pedal-box badge text-bg-light border">GUITARRA</span>
-                <span>→</span>
-                <span class="pedal-box badge text-bg-light border">OVERDRIVE</span>
-                <span>→</span>
-                <span class="pedal-box badge text-bg-light border">FUZZ</span>
-                <span>→</span>
-                <span class="pedal-box badge text-bg-light border">DELAY</span>
-                <span>→</span>
-                <span class="pedal-box badge text-bg-light border">AMPLIFICADOR</span>
+            <a class="back-link" href="presets.html">
+                ← Volver al catálogo
+            </a>
+
+            <div class="preset-category mt-4">
+                SHOEGAZE
             </div>
+
+            <h1 class="display-4 fw-bold mt-2">
+                Shoegaze Fuzz
+            </h1>
+
+            <p class="description mt-3">
+                Muro de sonido saturado con una cola de delay larga,
+                pensado para capas de guitarra que se funden con
+                el resto de la mezcla.
+            </p>
+
         </section>
 
-        <section class="container border-top py-4">
-            <h2 class="h5">Parámetros</h2>
+        <section class="container border-top py-5">
 
-            <table class="table table-bordered align-middle">
-                <thead>
-                    <tr>
-                        <th scope="col">Bloque</th>
-                        <th scope="col">Parámetro</th>
-                        <th scope="col">Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Overdrive</th>
-                        <td>Drive</td>
-                        <td>35%</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Fuzz</th>
-                        <td>Sustain</td>
-                        <td>70%</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Fuzz</th>
-                        <td>Tono</td>
-                        <td>55%</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Delay</th>
-                        <td>Tiempo</td>
-                        <td>480 ms</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Delay</th>
-                        <td>Feedback</td>
-                        <td>45%</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Amplificador</th>
-                        <td>Ganancia</td>
-                        <td>60%</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Amplificador</th>
-                        <td>Ecualización (graves / medios / agudos)</td>
-                        <td>60 / 40 / 55</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Cabina</th>
-                        <td>Tipo de cabina</td>
-                        <td>4x12 Vintage</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2 class="section-title">
+                Cadena de efectos
+            </h2>
+
+            <div class="effect-chain">
+
+                <span class="pedal-box">
+                    GUITARRA
+                </span>
+
+                <span class="arrow">→</span>
+
+                <span class="pedal-box">
+                    OVERDRIVE
+                </span>
+
+                <span class="arrow">→</span>
+
+                <span class="pedal-box active">
+                    FUZZ
+                </span>
+
+                <span class="arrow">→</span>
+
+                <span class="pedal-box">
+                    DELAY
+                </span>
+
+                <span class="arrow">→</span>
+
+                <span class="pedal-box">
+                    AMPLIFICADOR
+                </span>
+
+            </div>
+
+        </section>
+
+        <section class="container border-top py-5">
+
+            <h2 class="section-title mb-4">
+                Parámetros
+            </h2>
+
+            <div class="table-responsive">
+
+                <table class="table sound-table">
+
+                    <thead>
+                        <tr>
+                            <th>Bloque</th>
+                            <th>Parámetro</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <th>Overdrive</th>
+                            <td>Drive</td>
+                            <td>35%</td>
+                        </tr>
+
+                        <tr>
+                            <th>Fuzz</th>
+                            <td>Sustain</td>
+                            <td>70%</td>
+                        </tr>
+
+                        <tr>
+                            <th>Fuzz</th>
+                            <td>Tono</td>
+                            <td>55%</td>
+                        </tr>
+
+                        <tr>
+                            <th>Delay</th>
+                            <td>Tiempo</td>
+                            <td>480 ms</td>
+                        </tr>
+
+                        <tr>
+                            <th>Delay</th>
+                            <td>Feedback</td>
+                            <td>45%</td>
+                        </tr>
+
+                        <tr>
+                            <th>Amplificador</th>
+                            <td>Ganancia</td>
+                            <td>60%</td>
+                        </tr>
+
+                        <tr>
+                            <th>Amplificador</th>
+                            <td>Ecualización</td>
+                            <td>60 / 40 / 55</td>
+                        </tr>
+
+                        <tr>
+                            <th>Cabina</th>
+                            <td>Tipo de cabina</td>
+                            <td>4x12 Vintage</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
 
             <p class="small text-muted">
-                Valores de referencia pensados para el software SoundShed; ajusta
-                según el nivel de tu guitarra y el resto de tu equipo.
+                Valores de referencia pensados para el software
+                SoundShed. Ajusta según tu guitarra y el resto
+                de tu equipo.
             </p>
+
         </section>
+
     </main>
 
-    <footer class="border-top text-center py-3">
-        <div class="container">
-            <strong>SoundShed Explorer</strong> — Proyecto de pasantía · Instituto Santo Tomás
+
+    <footer>
+
+        <div class="container text-center py-4">
+
+            <strong>SoundShed Explorer</strong>
+            <span> — Proyecto de pasantía · Instituto Santo Tomás</span>
+
         </div>
+
     </footer>
+
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
