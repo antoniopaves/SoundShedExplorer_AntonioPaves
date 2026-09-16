@@ -15,6 +15,21 @@ body {
     color: var(--text);
 }
 
+.navbar > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
 .navbar {
     background-color: var(--graphite);
     border-color: var(--line) !important;
@@ -111,7 +126,9 @@ h1 {
 
 .effect-chain {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 
     gap: 0.6rem;
@@ -306,6 +323,36 @@ footer strong {
     filter: invert(1);
 }
 
+
+@media (max-width: 768px) {
+
+    .navbar > .container {
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0.75rem;
+
+        padding: 1rem 0;
+    }
+
+    .effect-chain {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .effect-chain .arrow {
+        transform: rotate(90deg);
+    }
+
+    .hero-image {
+        max-height: 220px;
+    }
+
+}
 
 @media (max-width: 576px) {
 
