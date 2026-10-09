@@ -7,7 +7,7 @@ function Header() {
                     <a className="navbar-brand btn-soundshed" href="#inicio">
                         SOUNDSHED EXPLORER
                     </a>
-
+                    
                     <button
                         className="navbar-toggler"
                         type="button"
