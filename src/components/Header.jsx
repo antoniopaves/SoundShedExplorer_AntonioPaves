@@ -1,13 +1,23 @@
-function Header() {
+function Header({ seccion, setSeccion }) {
+
+    const enPresets =
+        seccion === "presets" ||
+        seccion === "detalle-shoegaze" ||
+        seccion === "detalle-jrock" ||
+        seccion === "detalle-clean";
+
     return (
         <header>
             <nav className="navbar navbar-expand-lg border-bottom">
                 <div className="container">
 
-                    <a className="navbar-brand btn-soundshed" href="#inicio">
+                    <button
+                        className="navbar-brand btn-soundshed border-0"
+                        onClick={() => setSeccion("inicio")}
+                    >
                         SOUNDSHED EXPLORER
-                    </a>
-                    
+                    </button>
+
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -23,15 +33,30 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="#inicio">Inicio</a>
+                                <button
+                                    className={seccion === "inicio" ? "nav-link active" : "nav-link"}
+                                    onClick={() => setSeccion("inicio")}
+                                >
+                                    Inicio
+                                </button>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#presets">Presets</a>
+                                <button
+                                    className={enPresets ? "nav-link active" : "nav-link"}
+                                    onClick={() => setSeccion("presets")}
+                                >
+                                    Presets
+                                </button>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#contacto">Contacto</a>
+                                <button
+                                    className={seccion === "contacto" ? "nav-link active" : "nav-link"}
+                                    onClick={() => setSeccion("contacto")}
+                                >
+                                    Contacto
+                                </button>
                             </li>
                         </ul>
                     </div>

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 import Header from './components/Header';
@@ -14,42 +13,57 @@ function App() {
 
     const [modalAbierto, setModalAbierto] = useState(false);
 
-    const[seccion,setSeccion] = useState("inicio");
+    const [seccion, setSeccion] = useState("inicio");
 
     return (
-        <div className="app">
+        <>
             <Header seccion={seccion} setSeccion={setSeccion} />
-            <main className="ventana">
+
+            <main>
                 {seccion === "inicio" && (
-                    <Inicio abrirModal={() => setModalAbierto(true)} />
+                    <Inicio
+                        abrirModal={() => setModalAbierto(true)}
+                        setSeccion={setSeccion}
+                    />
                 )}
-                {seccion === "presets" && <Presets/>}
-                <DetalleShoegaze />
-                <DetalleJrock />
-                <DetalleClean />
-                <Contacto />
+                {seccion === "presets" && <Presets setSeccion={setSeccion} />}
+                {seccion === "detalle-shoegaze" && <DetalleShoegaze setSeccion={setSeccion} />}
+                {seccion === "detalle-jrock" && <DetalleJrock setSeccion={setSeccion} />}
+                {seccion === "detalle-clean" && <DetalleClean setSeccion={setSeccion} />}
+                {seccion === "contacto" && <Contacto />}
             </main>
+
             <Footer />
+
+            {/* Modal. Se usa "modal-caja" y no "modal" porque Bootstrap ya
+                tiene una clase .modal que viene oculta (display: none). */}
             {modalAbierto && (
-            <div className="modal-fondo" onClick={() => setModalAbierto(false)}>
-                <div className="modal" onClick={(e) => e.stopPropagation()}>
-                    <h2>Más información</h2>
-                    <p>
-                        Este es el contenido del modal. Aquí puedes poner el detalle de
-                        un producto, un formulario, una imagen más grande o lo que
-                        necesite tu proyecto.
-                    </p>
-                    <p className="modal-pista">
-                        Prueba a cerrarlo con el botón y también haciendo clic en el
-                        fondo gris.
-                    </p>
-                    <button className="boton" onClick={() => setModalAbierto(false)}>
-                    Cerrar
-                    </button>
+                <div className="modal-fondo" onClick={() => setModalAbierto(false)}>
+                    <div className="modal-caja" onClick={(e) => e.stopPropagation()}>
+                        <h2 className="h4">¿Cómo leer una cadena de efectos?</h2>
+
+                        <p>
+                            Una cadena es el recorrido que hace la señal de tu guitarra:
+                            sale de la guitarra, pasa por los pedales en orden y termina
+                            en el amplificador. El orden importa: si cambias un pedal de
+                            lugar, cambia el sonido.
+                        </p>
+
+                        <p className="modal-pista">
+                            Entra a «Ver Detalle» en cualquier preset para ver el orden
+                            exacto y el valor de cada bloque.
+                        </p>
+
+                        <button
+                            className="btn btn-soundshed button"
+                            onClick={() => setModalAbierto(false)}
+                        >
+                            Cerrar
+                        </button>
+                    </div>
                 </div>
-            </div>
             )}
-        </div>
+        </>
     );
 }
 

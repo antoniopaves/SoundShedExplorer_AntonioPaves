@@ -1,9 +1,9 @@
-function DetalleJrock() {
+function DetalleJrock({ setSeccion }) {
     return (
         <div id="detalle-jrock">
             <section className="container py-5">
                 <p>
-                    <a className="back-link" href="#presets">← Volver al catálogo de presets</a>
+                    <button className="back-link" onClick={() => setSeccion("presets")}>← Volver al catálogo de presets</button>
                 </p>
 
                 <span className="preset-category">J-ROCK</span>

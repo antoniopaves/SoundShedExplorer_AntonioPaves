@@ -12,7 +12,7 @@ const presets = [
             { text: 'DELAY', active: false },
         ],
         description: 'Muro de sonido saturado con cola de delay larga, ideal para capas.',
-        href: '#detalle-shoegaze',
+        destino: 'detalle-shoegaze',
     },
     {
         img: '/img/preset-jrock.jpg',
@@ -25,7 +25,7 @@ const presets = [
             { text: 'CAB', active: false },
         ],
         description: 'Distorsión de amplificador ajustada y compresión pareja para riffs marcados.',
-        href: '#detalle-jrock',
+        destino: 'detalle-jrock',
     },
     {
         img: '/img/preset-clean.jpg',
@@ -37,11 +37,11 @@ const presets = [
             { text: 'DELAY', active: false },
         ],
         description: 'Tono limpio con modulación suave, útil para partes ambientales.',
-        href: '#detalle-clean',
+        destino: 'detalle-clean',
     },
 ];
 
-function Presets() {
+function Presets({ setSeccion }) {
     return (
         <div id="presets">
             <section className="container text-center py-5">
@@ -57,7 +57,7 @@ function Presets() {
             <section className="container border-top py-5">
                 <div className="row g-4">
                     {presets.map((preset) => (
-                        <PresetCard key={preset.href} {...preset} />
+                        <PresetCard key={preset.destino} {...preset} setSeccion={setSeccion} />
                     ))}
                 </div>
             </section>

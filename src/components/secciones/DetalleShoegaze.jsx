@@ -1,8 +1,8 @@
-function DetalleShoegaze() {
+function DetalleShoegaze({ setSeccion }) {
     return (
         <div id="detalle-shoegaze">
             <section className="container py-5">
-                <a className="back-link" href="#presets">← Volver al catálogo</a>
+                <button className="back-link" onClick={() => setSeccion("presets")}>← Volver al catálogo</button>
 
                 <div className="preset-category mt-4">SHOEGAZE</div>
 

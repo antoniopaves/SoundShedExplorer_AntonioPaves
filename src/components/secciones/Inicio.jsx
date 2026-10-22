@@ -1,4 +1,4 @@
-function Inicio() {
+function Inicio({ abrirModal, setSeccion }) {
     return (
         <div id="inicio">
             <section className="container text-center py-5">
@@ -14,9 +14,21 @@ function Inicio() {
                     el tono que busca sin perderse en foros ni tutoriales sueltos.
                 </p>
 
-                <a href="#presets" className="btn btn-soundshed mt-3 button">
-                    Ver Catálogo
-                </a>
+                <div className="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                    <button
+                        className="btn btn-soundshed button"
+                        onClick={() => setSeccion("presets")}
+                    >
+                        Ver Catálogo
+                    </button>
+
+                    <button
+                        className="btn btn-outline-light button"
+                        onClick={abrirModal}
+                    >
+                        ¿Cómo leer una cadena?
+                    </button>
+                </div>
 
                 <img
                     src="/img/hero-pedalboard.jpg"
@@ -43,9 +55,12 @@ function Inicio() {
                                     <span className="pedal-box badge text-bg-dark">FUZZ → DELAY</span>
                                 </div>
 
-                                <a href="#detalle-shoegaze" className="btn btn-outline-light button">
+                                <button
+                                    className="btn btn-outline-light button"
+                                    onClick={() => setSeccion("detalle-shoegaze")}
+                                >
                                     Ver Detalle
-                                </a>
+                                </button>
                             </div>
                         </article>
                     </div>
@@ -65,9 +80,12 @@ function Inicio() {
                                     <span className="pedal-box badge text-bg-dark">AMP → CAB</span>
                                 </div>
 
-                                <a href="#detalle-jrock" className="btn btn-outline-light button">
+                                <button
+                                    className="btn btn-outline-light button"
+                                    onClick={() => setSeccion("detalle-jrock")}
+                                >
                                     Ver Detalle
-                                </a>
+                                </button>
                             </div>
                         </article>
                     </div>
@@ -87,9 +105,12 @@ function Inicio() {
                                     <span className="pedal-box badge text-bg-dark">DELAY</span>
                                 </div>
 
-                                <a href="#detalle-clean" className="btn btn-outline-light button">
+                                <button
+                                    className="btn btn-outline-light button"
+                                    onClick={() => setSeccion("detalle-clean")}
+                                >
                                     Ver Detalle
-                                </a>
+                                </button>
                             </div>
                         </article>
                     </div>

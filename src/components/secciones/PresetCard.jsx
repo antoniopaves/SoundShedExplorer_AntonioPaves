@@ -1,4 +1,4 @@
-function PresetCard({ img, alt, category, title, tags, description, href }) {
+function PresetCard({ img, alt, category, title, tags, description, destino, setSeccion }) {
     return (
         <div className="col-12 col-md-4">
             <article className="card h-100">
@@ -22,9 +22,12 @@ function PresetCard({ img, alt, category, title, tags, description, href }) {
 
                     <p className="description small mx-auto">{description}</p>
 
-                    <a href={href} className="btn btn-outline-light button mt-2">
+                    <button
+                        className="btn btn-outline-light button mt-2"
+                        onClick={() => setSeccion(destino)}
+                    >
                         Ver Detalle
-                    </a>
+                    </button>
                 </div>
             </article>
         </div>
