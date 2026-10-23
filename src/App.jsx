@@ -35,8 +35,6 @@ function App() {
 
             <Footer />
 
-            {/* Modal. Se usa "modal-caja" y no "modal" porque Bootstrap ya
-                tiene una clase .modal que viene oculta (display: none). */}
             {modalAbierto && (
                 <div className="modal-fondo" onClick={() => setModalAbierto(false)}>
                     <div className="modal-caja" onClick={(e) => e.stopPropagation()}>
