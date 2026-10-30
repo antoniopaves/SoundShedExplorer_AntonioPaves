@@ -11,8 +11,10 @@ import Footer from './components/Footer';
 
 function App() {
 
+    // Parte 1 de la guía: estado del modal (empieza cerrado).
     const [modalAbierto, setModalAbierto] = useState(false);
 
+    // Parte 2 de la guía: estado con el nombre de la sección que se muestra.
     const [seccion, setSeccion] = useState("inicio");
 
     return (

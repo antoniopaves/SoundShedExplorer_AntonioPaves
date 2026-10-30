@@ -402,6 +402,8 @@ footer strong {
     margin-bottom: 1.5rem;
 }
 
+/* Modal (clase 8). Se llaman modal-fondo / modal-caja porque Bootstrap
+   ya usa .modal y viene oculta por defecto. */
 .modal-fondo {
     position: fixed;
     inset: 0;
@@ -437,4 +439,54 @@ footer strong {
 .modal-pista {
     font-size: 0.9rem;
     font-style: italic;
+}
+
+/* Formulario de contacto: campos oscuros con foco verde.
+   Se usa .form-control.sound-input para ganarle a Bootstrap
+   (que los pinta blancos) sin depender del orden de los CSS. */
+.form-control.sound-input {
+    background-color: var(--charcoal);
+    color: #ffffff;
+
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.form-control.sound-input:focus {
+    background-color: var(--charcoal);
+    color: #ffffff;
+
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.25);
+}
+
+.community-box {
+    background-color: var(--charcoal);
+
+    border: 1px solid var(--line);
+    border-radius: 12px;
+
+    padding: 1.5rem;
+}
+
+.community-box p {
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.community-box p:last-child {
+    margin-bottom: 0;
+}
+
+.accent-text {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.faq p {
+    margin-bottom: 1.25rem;
+}
+
+.faq strong {
+    color: #ffffff;
 }

@@ -82,7 +82,6 @@ function Contacto() {
                                 alt="Comunidad de guitarristas tocando juntos"
                             />
 
-                            <p>Discord de la comunidad SoundShed Explorer</p>
 
                             <p>
                                 Instagram: <span className="accent-text">@soundshed.explorer</span>

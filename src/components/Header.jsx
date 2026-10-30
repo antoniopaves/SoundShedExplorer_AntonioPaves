@@ -1,5 +1,9 @@
+// Header recibe dos props desde App:
+//   seccion    -> para saber qué botón marcar como activo
+//   setSeccion -> para avisarle a App qué sección mostrar
 function Header({ seccion, setSeccion }) {
 
+    // "Presets" también queda activo cuando estás en el detalle de un preset.
     const enPresets =
         seccion === "presets" ||
         seccion === "detalle-shoegaze" ||
